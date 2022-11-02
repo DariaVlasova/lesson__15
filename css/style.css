@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Bold.woff') format('woff');
+    font-weight: 700;
+	font-style: normal;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Black.woff') format('woff');
+    font-weight: 900;
+	font-style: normal;
+    font-display: swap;
+}
+body,
+html{
+height: 100%;
+font-family: "Lato";
+color:  rgba(30, 33, 44, 1);
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body,
+html{
+height: 100%;
+font-family: "Lato";
+color:  rgba(30, 33, 44, 1);
+}
+[class*="_container"]{
+    max-width: 1265px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+   }
+   .header{
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100%;
+      padding: 20px 0;
+      z-index: 50;
+   }
+   .header__container {
+      display: flex;
+      align-items: center;
+      gap:60px;
+   }
+   .header__logo {
+   }
+   .logo {
+   }
+   .logo__img {
+   }
+   .header__menu {
+      flex-grow: 1;
+   }
+   .menu {
+   }
+   .menu__list {
+      display: flex;
+      column-gap:40px;
+      row-gap: 5px;
+      flex-wrap: wrap;
+   }
+   .menu__item {
+   }
+   .menu__link {
+      font-family: "Lato";
+      font-weight: 700;
+font-size: 16px;
+line-height: 160%;
+color: #424551;
+
+   }
+   .menu__link:hover{
+      text-decoration: underline;
+   }
+
+
+   .header__actions {
+      display: flex;
+      flex-shrink: 0;
+      align-items: center;
+      gap:36px;
+      flex-wrap: wrap;
+   }
+   .actions-header {
+   }
+   .actions-header__button {
+   }
+   
+   .actions-header__auth {
+      color: #424551;
+      background: url("../img/icons/Profile.png") left no-repeat;
+      padding-left: 24px;
+   }
+   .actions-header__auth:hover span{
+      text-decoration: underline;
+   }
+   
+
+   .main-block {
+      padding: 200px 0px 80px 0px ;
+      background: rgba(255, 63, 58, 0.2);
+      position: relative;
+   }
+   .main-block__container {
+      position: relative;
+      z-index: 2;
+   }
+   .main-block__body {
+      margin-bottom: 190px;
+   }
+   
+   .main-block__advantages {
+   }
+
+   .body-main {
+      display: flex;
+   }
+   .body-main__media {
+      flex:0 1 50%;
+   }
+   .body-main__play {
+font-weight: 700;
+font-size: 14px;
+line-height: 150%;
+color: #1E212C;
+display: inline-flex;
+align-items: center;
+position: relative;
+gap: 16px;
+   }
+   .body-main__play::after{
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background:rgba(255, 63, 58, 0.12);
+      transform:scale(1.6);
+      animation: play-circle 1s infinite ease alternate;
+   }
+   .body-main__play::before{
+      content: "";
+      flex: 0 0 52px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background:rgba(255, 63, 58, 1) url("../img/main/Polygon.svg") center no-repeat;
+   }
+ @keyframes play-circle{
+   0%{
+      transform:scale(1.6);
+   }
+   100%{
+      transform:scale(1.8);
+   }
+ }
+ .body-main__play:not(:last-child){
+margin-bottom: 40px;
+ }
+   .body-main__title {
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 130%;
+color: #1E212C;
+   }
+   .body-main__title:not(:last-child){
+      margin-bottom: 60px;
+       }
+   .body-main__action {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+   }
+   .body-main__button {
+   }
+  .body-main__content{
+   padding-right: 40px;
+   flex:0 1 50%;
+   align-self: center;
+  }
+   
+   .body-main__image {
+      max-width: 107.8%;
+      transform: translate(7.8%, 0px);
+   }
+   
+   .advantages-main {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+   }
+   .advantages-main__item {
+     
+   }
+   .item-advantages {
+      display: flex;
+      align-items: center;
+      gap:12px;
+   }
+ 
+   .item-advantages__circle{
+      background:rgba(255, 63, 58, 1) ;
+      flex: 0 0 8px;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+   }
+   .item-advantages__value {
+      font-style: normal;
+font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+color: #1E212C;
+   }
+   .item-advantages__text {
+      font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #1E212C
+   }
+
+   .main-block__decor {
+   }
+   .decor-main {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left:0;
+   }
+   .decor-main__item {
+      position: absolute;
+   }
+   .decor-main__item_1 {
+      background: url("../img/main/decor/shapes.svg") 0 0 no-repeat;
+      width: 96px;
+      height: 96px;
+      top:12%;
+      left:4.2%;
+   }
+
+   .decor-main__item_2 {
+      background: url("../img/main/decor/circles.svg") 0 0 no-repeat;
+      width: 284px;
+      height: 284px;
+      bottom:-9.2%;
+      left:-5.5%;
+
+   }
+   .decor-main__item_3 {
+      background: url("../img/main/decor/shapes2.svg") 0 0 no-repeat;
+      width: 88px;
+      height: 47px;
+      top:40%;
+      left:39%;
+   }
+   .decor-main__item_4 {
+      background: url("../img/main/decor/Vector.svg") 0 0 no-repeat;
+      width: 61px;
+      height: 61px;
+      top:60.9%;
+      left:38.1%;
+   }
+   .decor-main__item_5 {
+      background: url("../img/main/decor/shapes.svg") 0 0 no-repeat;
+      width: 96px;
+      height: 96px;
+      top:-3.7%;
+      right: 4%;
+      transform: rotate(135deg);
+   }
+
+   .decor-main__item_6 {
+      background: url("../img/main/decor/dots.svg") 0 0 no-repeat;
+      width: 187px;
+      height: 137px;
+      bottom:17.9%;
+      right: -4%;
+     
+   }
+   .who-we-are{
+      position: relative;
+   }
+   .who-we-are__container {
+      margin-top: 180px;
+      display: flex;
+      position: relative;
+   }
+   .who-we-are__image-container {
+      flex:0 1 50%;
+   }
+   .who-we-are__image {
+   }
+   .who-we-are__content {
+      flex: 0 0 50%;
+      
+   }
+   .who-we-are__title {
+   }
+   .title-container {
+      width: 390px;
+      margin-left: 135px;
+   }
+   .title-container__subtitle {
+      font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #1E212C;
+   }
+   .title-container__subtitle:not(:last-child){
+      margin-bottom: 8px;
+   }
+   .title-container__title {
+font-style: normal;
+font-weight: 900;
+font-size: 46px;
+line-height: 130%;
+color: #1E212C;
+
+   }
+   .title-container__title:not(:last-child){
+      margin-bottom: 40px;
+   } 
+   .who-we-are__list {
+      margin-bottom: 48px;
+      max-width: 390px;
+   }
+   .list-sign {
+      max-width: 390px;
+      
+   }
+   .list-sign__item {
+     display: flex;
+     flex-direction: row;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #424551;
+
+   }
+   .list-sign__item::before{
+      
+      display: block;
+      content:"";
+      margin: 7px 16px 0 0;
+      width: 24px;
+      height: 24px;
+         background: url("../img/who-we-are/decor/check.svg")  0 0 / 16px no-repeat;
+   }
+   .list-sign__item:not(:last-child){
+      margin-bottom: 12px;
+   }
+   .who-we-are__button {
+   }
+   .decor__item {
+      z-index: 2;
+        position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+   }
+   .decor__item_1 {
+            top:9%;
+      left:-4.7%;
+      width: 221px;
+      height: 96px;
+      background: url("../img/who-we-are/decor/dots.svg") 0 0 no-repeat;
+     transform: rotate(90deg);
+   }
+
+   .decor__item_2 {
+      top:48%;
+      left:93%;
+      width: 287px;
+      height: 287px;
+      background: url("../img/who-we-are/decor/circles.svg") 0 0 no-repeat;
+    
+   }
