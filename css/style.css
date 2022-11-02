@@ -68,6 +68,9 @@ color:  rgba(30, 33, 44, 1);
     padding-left: 15px;
     padding-right: 15px;
    }
+ .wrapper{
+      overflow:hidden;
+   }
    .header{
       position: fixed;
       top:0;
